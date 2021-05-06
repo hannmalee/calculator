@@ -1,4 +1,7 @@
 import { AddTheNumbers } from "./add.js"
+import { subtractTheNumbers } from "./subtract.js"
+import { divideTheNumbers } from "./divide.js"
+import { multiplyTheNumbers } from "./multiply.js"
 
 // we are referencing the first article 
 const buttonContainer = document.querySelector("#buttons")
@@ -16,13 +19,62 @@ buttonContainer.innerHTML = `
 
 
 // let's tell the DOM to listen for when the button is pressed (event is clicked)
-const addButton = document.querySelector("#add") // we reach into our query to find the element with the id of "add", 
+const addButton = document.querySelector("#add") // we reach into our query to 
+// find the element with the id of "add", 
 // we then assign it to "addButton"
 addButton.addEventListener( // we are adding an addEventListener (function)
 // to the variable of addButton and then defining the paramater within the parenthesis
      "click",
     (clickEvent) => {
         const sum = AddTheNumbers(1,2)
-        answerContainer.innerHTML = sum // "answerContainer" is a variable, "innerHTML" assigns variable to a string. *outerHTML would completetly replace the "add" article with the answer, rather than inserting it. 
+        answerContainer.innerHTML = sum // "answerContainer" is a variable, 
+        // "innerHTML" assigns variable to a string. *outerHTML would completetly 
+        // replace the "add" article with the answer, rather than inserting it. 
+    }
+)
+
+// let's tell the DOM to listen for when the button is pressed (event is clicked)
+const addButton = document.querySelector("#subtract") // we reach into our query to 
+// find the element with the id of "add", 
+// we then assign it to "addButton"
+addButton.addEventListener( // we are adding an addEventListener (function)
+// to the variable of addButton and then defining the paramater within the parenthesis
+     "click",
+    (clickEvent) => {
+        const sum = subtractTheNumbers(1,2)
+        answerContainer.innerHTML = sum // "answerContainer" is a variable, 
+        // "innerHTML" assigns variable to a string. *outerHTML would completetly 
+        // replace the "add" article with the answer, rather than inserting it. 
+    }
+
+
+)
+
+// let's tell the DOM to listen for when the button is pressed (event is clicked)
+const addButton = document.querySelector("#divide") // we reach into our query to 
+// find the element with the id of "add", 
+// we then assign it to "addButton"
+addButton.addEventListener( // we are adding an addEventListener (function)
+// to the variable of addButton and then defining the paramater within the parenthesis
+     "click",
+    (clickEvent) => {
+        const sum = divideTheNumbers(1,2)
+        answerContainer.innerHTML = sum // "answerContainer" is a variable, 
+        // "innerHTML" assigns variable to a string. *outerHTML would completetly 
+        // replace the "add" article with the answer, rather than inserting it. 
+    }
+)
+// let's tell the DOM to listen for when the button is pressed (event is clicked)
+const addButton = document.querySelector("#multiply") // we reach into our query to 
+// find the element with the id of "add", 
+// we then assign it to "addButton"
+addButton.addEventListener( // we are adding an addEventListener (function)
+// to the variable of addButton and then defining the paramater within the parenthesis
+     "click",
+    (clickEvent) => {
+        const sum = multiplyTheNumbers(1,2)
+        answerContainer.innerHTML = sum // "answerContainer" is a variable, 
+        // "innerHTML" assigns variable to a string. *outerHTML would completetly 
+        // replace the "add" article with the answer, rather than inserting it. 
     }
 )
