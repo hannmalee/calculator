@@ -34,47 +34,47 @@ addButton.addEventListener( // we are adding an addEventListener (function)
 )
 
 // let's tell the DOM to listen for when the button is pressed (event is clicked)
-const addButton = document.querySelector("#subtract") // we reach into our query to 
-// find the element with the id of "add", 
-// we then assign it to "addButton"
-addButton.addEventListener( // we are adding an addEventListener (function)
+const subtractButton = document.querySelector("#subtract") // we reach into our query to 
+// find the element with the id of "subtract", 
+// we then assign it to "subtractButton"
+subtractButton.addEventListener( // we are adding an addEventListener (function)
 // to the variable of addButton and then defining the paramater within the parenthesis
      "click",
     (clickEvent) => {
         const sum = subtractTheNumbers(1,2)
         answerContainer.innerHTML = sum // "answerContainer" is a variable, 
         // "innerHTML" assigns variable to a string. *outerHTML would completetly 
-        // replace the "add" article with the answer, rather than inserting it. 
+        // replace the "subtract" article with the answer, rather than inserting it. 
     }
 
 
 )
 
 // let's tell the DOM to listen for when the button is pressed (event is clicked)
-const addButton = document.querySelector("#divide") // we reach into our query to 
-// find the element with the id of "add", 
-// we then assign it to "addButton"
-addButton.addEventListener( // we are adding an addEventListener (function)
-// to the variable of addButton and then defining the paramater within the parenthesis
+const divideButton = document.querySelector("#divide") // we reach into our query to 
+// find the element with the id of "divide", 
+// we then assign it to "divideButton"
+divideButton.addEventListener( // we are adding an addEventListener (function)
+// to the variable of divideButton and then defining the paramater within the parenthesis
      "click",
     (clickEvent) => {
         const sum = divideTheNumbers(1,2)
         answerContainer.innerHTML = sum // "answerContainer" is a variable, 
         // "innerHTML" assigns variable to a string. *outerHTML would completetly 
-        // replace the "add" article with the answer, rather than inserting it. 
+        // replace the "divide" article with the answer, rather than inserting it. 
     }
 )
 // let's tell the DOM to listen for when the button is pressed (event is clicked)
-const addButton = document.querySelector("#multiply") // we reach into our query to 
-// find the element with the id of "add", 
-// we then assign it to "addButton"
-addButton.addEventListener( // we are adding an addEventListener (function)
-// to the variable of addButton and then defining the paramater within the parenthesis
+const multiplyButton = document.querySelector("#multiply") // we reach into our query to 
+// find the element with the id of "multiply", 
+// we then assign it to "multiplyButton"
+multiplyButton.addEventListener( // we are adding an addEventListener (function)
+// to the variable of multiplyButton and then defining the paramater within the parenthesis
      "click",
     (clickEvent) => {
         const sum = multiplyTheNumbers(1,2)
         answerContainer.innerHTML = sum // "answerContainer" is a variable, 
         // "innerHTML" assigns variable to a string. *outerHTML would completetly 
-        // replace the "add" article with the answer, rather than inserting it. 
+        // replace the "multiply" article with the answer, rather than inserting it. 
     }
 )
